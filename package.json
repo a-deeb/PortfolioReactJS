@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://a-deeb.github.io/profile",
+  "homepage": "http://a-deeb.github.io/Profile",
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.3.1",
