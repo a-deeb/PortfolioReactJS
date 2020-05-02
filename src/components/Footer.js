@@ -6,13 +6,14 @@ import Col from 'react-bootstrap/Col';
 function Footer(){
     return(
         <footer className="mt-5">
+        
             <Container fluid = {true}>
             <Row className="border-top justify-content-between p-3">
             <Col className="p-0" md={3} sm={12}> 
-            VisionPlayMedia
+            Est. 2020
             </Col>
-            <Col className="p=0 d-flex justify-conent-end" md={3}>
-            Author: Ahmed Deeb.
+            <Col className="p=0 d-flex justify-content-end" md={3}>
+           {new Date().toDateString()}
             </Col>
             </Row>
             </Container>

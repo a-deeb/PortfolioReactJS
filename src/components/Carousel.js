@@ -1,11 +1,10 @@
 import React from 'react';
-
 import Card from '../components/Card';
 
 
-import devgrub from '../assets/images/devgrub.png'
-import youtube from '../assets/images/evverest2.png'
-import evverest from '../assets/images/evverest.png'
+import linkedin from '../assets/images/link.gif'
+import blog from '../assets/images/blog.png'
+import github from '../assets/images/git.png'
 import { Container,Row } from 'react-bootstrap';
 
 class Carousel extends React.Component{
@@ -16,26 +15,26 @@ class Carousel extends React.Component{
                 items:[
                     {
                     id: 0,
-                    title: 'Dev Grub',
-                    subTitle: 'The cookbook for developers',
-                    imgSrc: devgrub,
-                    link: 'https://devgrub.com',
+                    title: 'Linkedin',
+                    subTitle: 'Profesional Profile',
+                    imgSrc: linkedin,
+                    link: 'https://www.linkedin.com/in/ahmed-deeb/',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Garrett Love',
-                    subTitle: 'YouTube channel',
-                    imgSrc: youtube,
-                    link: 'https://www.youtube.com/channel/UCxSITxL2JbF229OGCqieVZw',
+                    title: 'Vision Play Media',
+                    subTitle: 'Wordpress Blog',
+                    imgSrc: blog,
+                    link: 'https://visionplaymedia.wordpress.com/',
                     selected: false
                 },
                 {
                     id: 2,
-                    title: 'Evverest',
-                    subTitle: 'A social network for developers',
-                    imgSrc: evverest,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    title: 'Github',
+                    subTitle: 'A-deeb Repository',
+                    imgSrc: github,
+                    link: 'https://github.com/a-deeb',
                     selected: false
                 },
             ]
@@ -66,13 +65,16 @@ class Carousel extends React.Component{
 
     render (){
         return(
-            
-            <Container fluid={true}>
-            <Row className="justify-content-around">
-            {this.makeItems(this.state.items)}
+            <div>
+            <Container fluid={true}>        
+            <Row className="justify-content-around">      
+            {  
+                        
+                this.makeItems(this.state.items)         
+            }
             </Row>
             </Container>
-         
+            </div>   
         );
     }
 }
