@@ -17,10 +17,16 @@ margin: 20px;
 }
 
 .g-card-image {
-border-radius: 0px;
-width: 400px;
-height: 400px;
-box-shadow: 0px 0px 3px 1px rgb(204, 204, 204);
+  align-items: center;
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin-right: 0rem;
+  width: 400px;
 }
 
 .g-card-info {
