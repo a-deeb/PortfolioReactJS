@@ -33,6 +33,7 @@ class App extends React.Component {
       contact:{
         title: 'Reach Me:'
       }
+       
       
     }
   }
