@@ -1,6 +1,7 @@
 import React from 'react';
 import ParticlesBg from 'particles-bg'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {HashRouter, Route, Link} from 'react-router-dom';
+
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Navbar';
@@ -40,7 +41,7 @@ class App extends React.Component {
   render(){  
     return (
       <div>  
-      <Router>
+     <HashRouter basename='/'>
         <Container className="p-0" fluid ={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
           <ParticlesBg type="square" bg={true} />
@@ -48,18 +49,18 @@ class App extends React.Component {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/React-Portfolio">Home</Link>
+                <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
               </Navbar.Collapse> 
               </Navbar>
-              <Route path = "/React-Portfolio" exact render= {() => <HomePage title ={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
+              <Route path = "/" exact render= {() => <HomePage title ={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
               <Route path = "/about"  render= {() => <AboutPage title ={this.state.about.title} />}/>
               <Route path = "/contact"  render= {() => <ContactPage title ={this.state.contact.title} />}/>
               <Footer />
         </Container>
-      </Router>
+      </HashRouter>
       </div>
     );
   }
