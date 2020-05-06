@@ -34,7 +34,7 @@ class App extends React.Component {
         title: 'Reach Me:'
       }
        
-      
+
     }
   }
   render(){  
@@ -48,13 +48,13 @@ class App extends React.Component {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/React-Portfolio">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
               </Navbar.Collapse> 
               </Navbar>
-              <Route path = "/" exact render= {() => <HomePage title ={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
+              <Route path = "/React-Portfolio" exact render= {() => <HomePage title ={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
               <Route path = "/about"  render= {() => <AboutPage title ={this.state.about.title} />}/>
               <Route path = "/contact"  render= {() => <ContactPage title ={this.state.contact.title} />}/>
               <Footer />
