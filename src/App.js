@@ -33,6 +33,7 @@ class App extends React.Component {
       contact:{
         title: 'Reach Me:'
       }
+      
     }
   }
   render(){  
@@ -41,7 +42,8 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid ={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>VisionPlayMedia</Navbar.Brand>
+          <ParticlesBg type="square" bg={true} />
+            <Navbar.Brand id="nav-brand">VisionPlayMedia</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
@@ -55,7 +57,6 @@ class App extends React.Component {
               <Route path = "/about"  render= {() => <AboutPage title ={this.state.about.title} />}/>
               <Route path = "/contact"  render= {() => <ContactPage title ={this.state.contact.title} />}/>
               <Footer />
-              <ParticlesBg type="cobweb" bg={true} />
         </Container>
       </Router>
       </div>

@@ -1,7 +1,5 @@
 import React from 'react';
 import Card from '../components/Card';
-
-
 import linkedin from '../assets/images/link.gif'
 import blog from '../assets/images/blog.png'
 import github from '../assets/images/git.png'
