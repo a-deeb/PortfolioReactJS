@@ -1,7 +1,6 @@
 import React from 'react';
-import ParticlesBg from 'particles-bg'
-import {HashRouter, Route, Link} from 'react-router-dom';
 
+import {HashRouter, Route, Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Navbar';
@@ -44,7 +43,7 @@ class App extends React.Component {
      <HashRouter basename='/'>
         <Container className="p-0" fluid ={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-          <ParticlesBg type="square" bg={true} />
+       
             <Navbar.Brand id="nav-brand">VisionPlayMedia</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
